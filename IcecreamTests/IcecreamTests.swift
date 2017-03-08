@@ -141,7 +141,7 @@ class IcecreamTests: XCTestCase {
     
     // 8.
     func testAddPersonWithTravis() {
-        let isAddedToParty = testIcecream.add(person: "Travis", withFlavor: "Strawberry")
+        let isAddedToParty = testIcecream.add(person: "Travis", flavor: "Strawberry")
         XCTAssertTrue(isAddedToParty, "Travis is new to the party, the function should return true.")
         
         let flavor = testIcecream.flavor(forPerson: "Travis")
